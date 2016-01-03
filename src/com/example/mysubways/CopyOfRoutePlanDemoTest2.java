@@ -136,15 +136,7 @@ public class CopyOfRoutePlanDemoTest2 extends Activity implements
 		LatLng nodeLocation = null;
 		String nodeTitle = null;
 		Object step = route.getAllStep().get(nodeIndex);
-		if (step instanceof DrivingRouteLine.DrivingStep) {
-			nodeLocation = ((DrivingRouteLine.DrivingStep) step).getEntrance()
-					.getLocation();
-			nodeTitle = ((DrivingRouteLine.DrivingStep) step).getInstructions();
-		} else if (step instanceof WalkingRouteLine.WalkingStep) {
-			nodeLocation = ((WalkingRouteLine.WalkingStep) step).getEntrance()
-					.getLocation();
-			nodeTitle = ((WalkingRouteLine.WalkingStep) step).getInstructions();
-		} else if (step instanceof TransitRouteLine.TransitStep) {
+		if (step instanceof TransitRouteLine.TransitStep) {
 			nodeLocation = ((TransitRouteLine.TransitStep) step).getEntrance()
 					.getLocation();
 			nodeTitle = ((TransitRouteLine.TransitStep) step).getInstructions();
@@ -189,8 +181,6 @@ public class CopyOfRoutePlanDemoTest2 extends Activity implements
 	protected void onRestoreInstanceState(Bundle savedInstanceState) {
 		super.onRestoreInstanceState(savedInstanceState);
 	}
-
-
 
 	@Override
 	public void onGetTransitRouteResult(TransitRouteResult result) {
@@ -273,13 +263,13 @@ public class CopyOfRoutePlanDemoTest2 extends Activity implements
 	@Override
 	public void onGetDrivingRouteResult(DrivingRouteResult arg0) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void onGetWalkingRouteResult(WalkingRouteResult arg0) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }
