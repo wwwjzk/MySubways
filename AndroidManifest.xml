@@ -18,7 +18,7 @@
         android:theme="@style/AppTheme" >
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="e7mghNlgT9xdg6IetvxEWG6N" />
+            android:value="r5b2vYZ54B6Kzif83HtHv2t0" />
 
         <activity
             android:name=".CopyOfRoutePlanDemoTest2"
